@@ -1,0 +1,58 @@
+h1 {
+    font-language-override: "Times New Roman";
+    font-style: bold;
+    font-size: 35px;
+    line-height: 30px;
+    line-height: 85%;
+    text-align: left;
+    vertical-align: top;
+
+    color : #005677;
+    background-color: #C4C4C4;
+}
+
+
+
+h3 {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 84.69%;
+
+    color : #005677;
+    background-color: #C4C4C4;
+
+}
+
+
+.spanNegrita { 
+    font-weight: bold;
+}
+
+.DatosPersonales{
+    Font-family: "Times New Roman";
+    Font-style: (mixed);
+    Font-size: 15px;
+
+    text-align: Left;
+    vertical-align: Top ;
+    
+}
+
+.imagen {
+    background-color: #E5E5E5;
+
+}
+
+p {
+    font-family: "Times New Roman";
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 17px;
+    line-height: 85%;
+    text-align: center;
+    vertical-align: Top;
+    background-color: #005677;
+    color: #FFFFFF;
+}
