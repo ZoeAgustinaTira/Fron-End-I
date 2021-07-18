@@ -1,3 +1,29 @@
+
+header {
+    background-color: #E5E5E5;
+    text-align: center;
+}
+header section {
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    background-color:#C4C4C4 ;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 70%;
+    margin: 30px;
+}
+
+footer {
+    text-align: center;
+    display: unline-block;
+    background-color:#005677;
+    color: white;
+}
+
+
 h1 {
     font-language-override: "Times New Roman";
     font-style: bold;
@@ -6,11 +32,12 @@ h1 {
     line-height: 85%;
     text-align: left;
     vertical-align: top;
+    text-align: center;
+    text-transform: uppercase;
 
     color : #005677;
     background-color: #C4C4C4;
 }
-
 
 
 h3 {
@@ -19,6 +46,7 @@ h3 {
     font-style: normal;
     font-weight: bold;
     line-height: 84.69%;
+    text-transform: uppercase;
 
     color : #005677;
     background-color: #C4C4C4;
@@ -26,7 +54,7 @@ h3 {
 }
 
 
-.spanNegrita { 
+.negrita span{ 
     font-weight: bold;
 }
 
@@ -39,9 +67,9 @@ h3 {
     vertical-align: Top ;
     
 }
-
-.imagen {
-    background-color: #E5E5E5;
+.DatosPersonales span {
+        font-style: italic;
+        font-weight: bold;
 
 }
 

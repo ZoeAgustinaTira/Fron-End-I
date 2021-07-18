@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@500&display=swap');
+
+h1 {
+    font-family: "Noto Sans JP";
+    color: 	rgb(32, 33, 79);
+}
+
+h2 { 
+    color: #73C2FB;
+    font-family: Roboto;
+
+}
+h3 {
+    font-family: Roboto;
+}
+
+.Anios {
+    color: #73C2FB;
+}
+
+p { 
+    font-family: "Noto Sans JP";
+    line-height: 50px;
+}

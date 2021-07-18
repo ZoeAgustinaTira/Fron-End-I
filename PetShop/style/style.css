@@ -1,0 +1,22 @@
+
+
+.banner {
+    background-color: red;
+    background-image: '../img/bowl-and-pet-daities-on-green-background 1.png';
+}
+
+h1 { 
+    display: align-block;
+}
+
+.seccion {
+    display: inline-block ;
+}
+
+div {
+
+    background-color: red;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
