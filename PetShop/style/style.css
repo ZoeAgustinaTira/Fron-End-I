@@ -56,6 +56,7 @@
 
 .fas {
     color: white;
+
 }
 
 /*<!--Sección Banner-->*/
@@ -147,3 +148,48 @@
 
 }
 
+/*<!--Footer-->*/
+footer{
+    background-color: #3C2313;
+    height: 284px;
+    top: 1506px;
+}
+
+footer dl{
+    width: 88px;
+    height: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+footer dd {
+    width: 90px;
+    height: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    line-height: 100%;
+    color: #8A8787;
+}
+
+footer div {
+    height: 20px;
+    top: 1787px;
+
+    font-family: "Roboto",sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    line-height: 100%;
+    text-align: center;
+
+    background-color: #222222;
+    color: #FFFFFF;
+    
+
+}
