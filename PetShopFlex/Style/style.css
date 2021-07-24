@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*<!--Header-->*/
+header{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
+
+    
+}
+/*<!--Barra superior-->*/
+.barraSuperior {
+
+    background-color: #222222;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.barraSuperior div {
+    
+    display: flex;
+
+}
+
+.barraSuperior div p {
+    padding: 10px;
+}
+
+/*<!--Bara inferior-->*/
+.barraInferior {
+    
+    background-color: #F0A83E;
+    color:white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraInferior nav a {
+    display: inline-block;
+    padding: 10px ;
+    
+}
+
+/*<!--Main-->*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.seccion {
+    display: inline-block;
+    padding: 30px;
+}
+.banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png) ;
+    width: 100%;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner div section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.banner div section h2{
+    font-family:  "Roboto",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFFFFF;
+
+    color: #3C2313;
+}
+
+.banner div section h3{
+    font-family:  "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 15px 23px;
+    background-color: #F0A83E;
+    
+    color: white;
+}
+
+
+.seccionProductos {
+    font-family: "Roboto", sans-serif;
+    text-align: center ;
+
+    display: flex;
+    flex-direction: column;
+    
+}   
+
+.seccionProductos h1 {
+    font-size: 40px;
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 20px;
+    color:#3C2313;
+}
+
+.seccionProductos p{
+    font-size: 15px;
+    font-weight: 400;
+
+    display: inline-block;
+    padding: 20px;
+
+    color:#666666;
+}
+
+.seccionProductos div { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Productos {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Productos h6 {
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #3C2313;
+}
+
+.Productos p {
+    font-size: 15px;
+    font-weight: 500;
+
+    color:#F0A83E;
+}
+
+footer{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterSuperior{
+    background-color: #3C2313;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FooterSuperior div {
+    display: inline-block;
+    padding: 23px 70px;
+}
+
+.FooterSuperior div div dl dl {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color:white;
+
+}
+.FooterSuperior div div dl dd{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+
+    color:#8A8787;
+
+}
+
+.FooterSuperior div div{
+    display: flex;
+}
+
+.FooterSuperior div div dl {
+    display: inline-block;
+    padding: 5px 20px;
+}
