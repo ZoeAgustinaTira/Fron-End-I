@@ -1,0 +1,225 @@
+/*<!--general-->*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*<!--header-->*/
+
+.descuento{
+
+    height: 38px;
+    background-color: #1CD1B0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.descuento p {
+    font-family: "Roboro", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    position: relative;
+    left: 1rem;
+}
+
+header{
+    background: #00669F;
+
+    position: sticky;
+    top: 0;
+
+    height: 100px;
+    left: 0px;
+
+    
+    z-index:999;
+}
+
+.barraNav p {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+
+    position: relative;
+    top: 30px;
+    left: 30px;
+    
+    line-height: 47px;
+}
+
+
+/*<!--main-->*/
+main {
+    background-color: #E5E5E5;
+    height: 100%;
+}
+
+.card{
+    padding: 4rem 0rem;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    border-radius: 50%;
+
+    position: absolute;
+    left: 90px;
+    top: 134px;
+
+}
+
+.desc {
+    
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 268px;
+    left: 18px;
+    padding: 10px;
+}
+
+.desc h2 {
+    margin-bottom: 2rem;
+}
+.desc a {
+
+    padding: 10px 30px;
+    
+    text-align: center;
+
+    text-decoration: none;
+
+    color: white;
+    background-color: #00669F;
+}
+
+.fas{
+    position: absolute;
+    top:0.5rem;
+    left: 0.5rem;
+    width: 3rem;   
+}
+.fa-heart{
+    width: 15px;
+    color: red;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*<!--Primer Batman-->*/
+.Batman {
+    height: 600px;
+    width: 300px;
+
+    position: relative; 
+
+    background-image: url("../img/fondobatman.png");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #F3F3F3;
+    border-radius: 5%;
+}
+
+
+/*<!--Harley-->*/
+.Harley {
+    height: 600px;
+    width: 300px;
+
+    position: relative; 
+
+    background-image: url("../img/fondohurley.png");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#F3F3F3;
+    border-radius: 5%;
+}
+
+.mujerM {
+    height: 600px;
+    width: 300px;
+
+    position: relative; 
+
+    background-image: url("../img/fondomujerm.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#F3F3F3;
+    border-radius: 5%;
+}
+
+/*<!--SegundoBatman-->*/
+.superman {
+    height: 600px;
+    width: 300px;
+
+    position: relative; 
+
+    background-image: url("../img/849bfede3a5193c34ab8a00379e64fa2\ 1\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#F3F3F3;
+    border-radius: 5%;
+}
+.imgsuper{
+    width: 7.2rem;
+    border-radius: 50%;
+
+    position: relative;
+    top: 7.5rem;
+}
+/*<!--footer-->*/
+footer {
+
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+
+    background-color: #00669F;
+    color: white;
+    width: 1024; 
+    height: 51px;
+    
+    display: flex;
+    align-items: center;
+
+}
+
+footer div {
+    position: relative;
+    left: 1rem;
+}
