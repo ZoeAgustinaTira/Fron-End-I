@@ -12,24 +12,41 @@
 
 <body>
     <!-- Aqui comienza el header -->
-    <header>
-        <p>20% de descuento en todos los productos!</p>
-        <div>
-            <img src="img/Group.png" alt="Logo">
-            <h2>Nombre Tienda</h2>
-        </div>
+    <div class="headerSuperiorLogin">
+        20% de descuento en todos los productos!
+    </div>
+
+    <header class="headerlogin"> 
+
+            <div>
+                <img src="img/Group.png" alt="Logo">
+            </div>
+            
+            <h1>
+                <a href="index.html">Nombre Tienda</a> 
+            </h1>
+
 
     </header>
+
     <!-- Aqui comienza el Main -->
-    <main>
-        <div class="formularioIndex">
+
+    <main class="mainRegistro">
+        <p>
+            Contacto
+        </p>
+
+        <div class="formContacto">
             <form action="index.html">
-                <h1>Contacto</h1>
+                
                 <input type="text" placeholder="Nombre y Apellido" required>
                 <input type="email" placeholder="Correo Electrónico" required>
-                <textarea name="mensaje" cols="30" rows="10"></textarea>
-                <div class="btn-registro">
-                    <button type="submit">Rastrear</button> <input type="submit" value="Entrar">
+
+                <textarea name="mensaje" cols="30" rows="10">Comentario...</textarea>
+
+                <div>
+                    <button type="reset" class="rese"> Rastrear </button> 
+                    <button type="submit" class="env"> Enviar </button>
                 </div>
 
             </form>
