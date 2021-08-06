@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="headerSuperiorSecundario">
+        20% de descuento en todos los productos!
+    </div>
+
+    <header class="headerSecundario">
+        <div>
+            <img src="img/Group.png" alt="Tienda">
+        </div>
+        <h1>
+            <a href="index.html">Nombre Tienda</a>
+        </h1>
+
+
+    </header>
+
+    <main class="mainFormulario">
+
+        <div class="primerDiv">
+            <h1>
+                Añadí tu super!
+            </h1>
+            <p>
+                Agregá tu personaje favorito completando las opciones.
+            </p>
+        </div>
+
+        <div class="segundoDiv">
+            <div>
+                <form action="/registro.html" method="POST">
+                    <label for="">Nombre</label>
+                    <input type="name" name="Nombre">
+
+                    <label for="">Fecha</label>
+                    <input type="date" name="Fecha" value="dd/mm/aa">
+                    <input type="text" name="Descripcion" value="Descripción">
+                </form>
+</div>
+
+                <div class="tercerDiv">
+                    <Label>Especie</Label>
+                    <select name="" id="">
+                        <option value="Especie">Especie</option>
+                        <option value="Agua">Agua</option>
+                        <option value="Fuego">Fuego</option>
+                        <option value="Tierra">Tierra</option>
+                        <option value="Aire">Aire</option>
+                    </select>
+
+                    <label for="">Agregar Foto</label>
+                    <input type="file" name="avatar" accept=".jpg">
+
+                    <!--/*-----------Poderes----------*/-->
+
+                    <label for="">Poderes</label>
+
+                    <input type="checkbox" name="Volar" id="1">
+                    <label for="">Volar</label>
+
+                    <input type="checkbox" name="Superinteligencia" id="2">
+                    <label for="">Superinteligencia</label>
+
+                    <input type="checkbox" name="Vista de rayo láser" id="3">
+                    <label for="">Vista de rayo láser</label>
+
+                    <input type="checkbox" name="Billetera gorda" id="4">
+                    <label for="">Billetera gorda</label>
+
+                    <!--/*-----------Tipo de personaje----------*/-->
+                    <input type="checkbox" name="Héroe / Heroina" id="3">
+                    <label for="">Héroe / Heroina</label>
+
+                    <input type="checkbox" name="Villano / Villana" id="4">
+                    <label for="">Villano / Villana</label>
+
+                </div>
+            
+
+
+
+        </div>
+
+        <div class="enviarFormulario">
+            <input type="submit" name="Añadir" id="">
+        </div>
+    </main>
+
+</body>
+
+</html>
