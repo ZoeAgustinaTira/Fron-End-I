@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*----------------------------- General -----------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*----------------------------- Header -----------------------------*/
+header{
+    background-color: #222222;
+    
+}
+.containerHeader {
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-weight: 400;   
+    width:100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items:  center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size:2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo p{
+    padding-left: 10px;
+}
+
+/*Logo pizza&font*/
+span.pizza{
+    color: green;
+}
+span.separador{
+    color: white;
+}
+span.front{
+    color: red;
+}
+
+.containerHeader nav ul, .containerHeader nav ul a {
+    display: flex;
+    color:white;
+    text-decoration: none;
+}                                       /*no le puedo sacarel subrayadooooo*/
+
+.containerHeader nav li {
+    padding: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+
+
+/*------------------------------ Main -----------------------------*/
+main {
+    background-color: ##E5E5E5    ;
+    
+}
+
+.padre{
+    padding: 35px 19px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+
+
+.item1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    width: 490px;
+    height: 350px;
+    border-radius: 5px;
+
+    background-image: url("../img/delivery.jpg");
+
+    color:red;
+}
+
+.item1 h2 span{
+    color: white;
+}
+
+.item2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    width: 490px;
+    height: 350px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+}
+
+.containerPizzas{
+    border-radius: 5px;
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.containerPizzas div h2 {
+    position: relative;
+    padding-bottom: 20px;
+}
+.item2 div h2{
+    text-align: center;
+
+}
+/*----------------------------- Footer -----------------------------*/
+.containerFooter{
+    width:100%;
+    font-family: "Roboto", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    padding: 10px;
+
+    background-color: #222222;
+    color:#F3F3F3;
+}
+
+.containerFooter div ul li{
+    position: relative;
+    padding: 10px;
+}
+
+.pizzaTitulo{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
