@@ -1,25 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 1300px;
+
+}
+
+/*body {
+    width: 1000px;
+
+}*/
+
+/*-----------------------HEADER-------------------------*/
+.container {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*-----------------------MAIN-------------------------*/
+.datosPersonales {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+
+}
+
+.titulo {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+}
+
+.titulo div p, .titulo div h4, .cuerpoSecciones>p, .cuerpoSecciones div p{
+    position: relative;
+    padding-left: 100px;
+}
+
+.cuerpoSecciones{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+}
+
+i {
+    color: #73C2FB;
+    position: relative;
+    padding-left: 30px;
+}
+
+
+.cefi {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.cefi p span{
+    position: relative;
+    padding-right: 50px;
+}
+
 
 h1 {
-    font-family: "Noto Sans JP";
+    
     color: 	rgb(32, 33, 79);
 }
 
 h2 { 
     color: #73C2FB;
-    font-family: Roboto;
 
 }
+
 h3 {
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    padding-top: 30px;
 }
 
-.Anios {
-    color: #73C2FB;
-}
 
-p { 
-    font-family: "Noto Sans JP";
-    line-height: 50px;
-}
