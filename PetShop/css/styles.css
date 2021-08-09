@@ -558,6 +558,11 @@ input [type="text"], input [type="email"]: focus{
         
     }
 
+    .footer-naranja div {
+        width: 100%;
+        flex-direction: column;
+    }
+
     .footer-naranja div form div button {
         margin:0%;
     }
