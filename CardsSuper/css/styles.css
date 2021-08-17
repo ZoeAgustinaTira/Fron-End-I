@@ -11,7 +11,7 @@ textarea{
     font-family: "Roboto",sans-serif;
     resize:none;
 }
-/*<!--header-->*/
+/*<!-------------------------------------------HEADER-------------------------------------------*>*/
 
 .descuento{
     height: 38px;
@@ -80,7 +80,7 @@ nav a {
 }
 
 
-/*<!--main-->*/
+/*<!-------------------------------------------MAIN------------------------------------------->*/
 main {
     background-color: #E5E5E5;
     height: 100%;
@@ -273,7 +273,7 @@ footer div {
 }
 
 
-/*-------------------------LOGIN------------------------------------*/
+/*-------------------------------------------LOGIN-------------------------------------------*/
 .headerSecundario{
     font-family: "Roboto",sans-serif;
     font-size: 10px;
@@ -380,7 +380,7 @@ footer div {
     
 }
 
-/*-------------------------REGISTRO------------------------------------*/
+/*-------------------------------------------REGISTRO-------------------------------------------*/
 .mainRegistro{
     display: flex;
     height: 100%;
@@ -521,19 +521,19 @@ input[type="reset"]:hover{
     background-color: rgb(247, 121, 112);
 }
 
-/*-------------------------FORMULARIO------------------------------------*/
+/*-------------------------------------------FORMULARIO-------------------------------------------*/
 .mainFormulario{
+    width: 80%;
     font-family: "Roboto",sans-serif;
     font-size: 1rem;
     font-weight: 300;
 
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     text-align: center;
-    position: relative;
-    margin: 20px 280px;
 
+    
     background-color: #00669F;
     border-radius: 20px;
     color: white;
@@ -555,33 +555,37 @@ input[type="reset"]:hover{
     position: relative;
     padding: 1rem;
 }
-
-
-
-.segundoDiv {
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.segundoDiv div form {
+/*formulario*/
+.segundoDiv form {
     display: flex;
     flex-direction: column;
-    width: 20rem;                   /* POR QUE ME LO HACE RE CHIQUITO SI NO ESTA?*/
-    position: relative;             
+    width: 100%;     
+    justify-content: center;    
+    align-items: center;            /* POR QUE ME LO HACE RE CHIQUITO SI NO ESTA?*/           
     
 }
 
-.segundoDiv div form label {
+.formcentral{
+    width: 100%;
+    display: flex;
+
+}
+
+.divIzq {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.divIzq label {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: start;
 }
 
-.segundoDiv div form input{
+.divIzq input{
     height: 3rem;
-
     border-radius: 1rem;
     
 }
@@ -591,7 +595,12 @@ input[type="reset"]:hover{
     background-color: red;
 }
 
-.tercerDiv label{
+.divDer {
+    display: flex;
+    flex-direction: column;
+
+}
+.divDer label{
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -604,24 +613,14 @@ input [type="text"]{
     background-color: rebeccapurple;
 }
 
-.tercerDiv select{
+.divDer select{
     height: 3rem;
     
     border-radius: 1rem;
 }
 
-.segundoDiv div{
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    margin: 10px;
-}
-
-
-
 .enviarFormulario input {
-    width: 45%;
+    width: 100%;
     height: 100%;
 
     font-size: 2rem;
