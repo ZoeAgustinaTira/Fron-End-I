@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+/*--------------------HEADER-----------------------------*/
+header{
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo div img {
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.logo div p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:#D01418;
+}
+
+.logo div p span{
+    font-weight: 700;
+    color: #F3F3F3;
+}
+
+.navegador{
+    display: flex;
+    align-items: center;
+}
+.navegador nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+}
+.navegador nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    padding: 1rem;
+    color: white;
+}
+.fas{
+    padding: 1rem;
+    color: #D01418;
+}
+
+/*-------------------------MAIN-----------------------------*/
+main {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div h3{
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    padding: 4rem 0rem;
+    color:white;
+}
+
+.banner div h3 span{
+    color: #D01418;
+}
+
+.banner div a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: relative;
+    padding: 1rem 2rem;
+    text-decoration: none;
+
+    color: white;
+    background-color: #D01418;
+    border-radius: 10px;
+}
+
+/*<!--Productos destacados-->*/
+.productosDestacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productosDestacados div h3{
+    font-size: 2rem;
+    font-weight: 400;
+
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #000000;
+}
+
+.productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.productos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 4rem; /*podria meterle un width*/
+    
+    text-align: center;
+    background-color: beige;
+    
+}
+
+.productos div img{
+    text-align: center;
+}
+
+.precio{
+    font-size: 1.5rem;
+
+    position: relative;
+    padding: 1rem 0rem;
+    color: #000000;
+}
+
+.envioGratis{
+    font-size: 0.8rem;
+
+    position: relative;
+    padding-top: 0.2rem;
+    color: #619D00;
+}
+
+/*<!--Productos estrellas-->*/
+.productorEstrella{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productorEstrella div h3{
+    font-size: 2rem;
+    font-weight: 400;
+
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #000000;
+}
+
+.productosEstre{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.silla {
+    height: 150px;
+    width: 30%;
+    background-size: cover;
+    background-image: url(../img/sillas.png);
+    border-radius: 10px;
+}
+
+.silla p, .compu p {
+    position: relative;
+    padding-right: 1rem;
+    padding-top: 70px;
+    text-align: end;
+    
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #F3F3F3;
+}
+
+.compu {
+    height: 150px;
+    width: 30%;
+    background-size: cover;
+    background-image: url(../img/compus.png);
+    border-radius: 10px;
+}
+
+/*-------------------------FOOTER-----------------------------*/
+footer{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 50px;
+}
+
+.footerSuperior{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+}
+
+.derecha div p{
+    font-size: 1.5rem;
+    position: relative;
+    padding: 1rem;
+    color: #F3F3F3;
+}
+
+.fa-twitter{   
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #14AED0;
+}
+
+.fa-facebook-f{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #1476D0;
+}
+
+.fa-instagram{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #CE0CFF;
+}
+
+.footerInferior {
+    text-align: center;
+    background-color: #C4C4C4;
+}
+
