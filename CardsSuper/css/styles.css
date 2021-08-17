@@ -532,6 +532,7 @@ input[type="reset"]:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 3rem auto;
 
     
     background-color: #00669F;
@@ -556,6 +557,9 @@ input[type="reset"]:hover{
     padding: 1rem;
 }
 /*formulario*/
+.segundoDiv{
+    width: 100%;
+}
 .segundoDiv form {
     display: flex;
     flex-direction: column;
@@ -566,14 +570,15 @@ input[type="reset"]:hover{
 }
 
 .formcentral{
-    width: 100%;
     display: flex;
-
+    width: 100%;
 }
 
 .divIzq {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding: 1rem 2rem;
 
 }
 
@@ -590,14 +595,21 @@ input[type="reset"]:hover{
     
 }
 
+.descripcion{
+    size: 300px;
+    
+}
+
 /*PORQUE NO ANDAAAAAAAAAAAAAAAAAAAAAAAA*/
-.input [type="text"] {
+input [type="text"] {
     background-color: red;
 }
 
 .divDer {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding: 1rem 2rem;
 
 }
 .divDer label{
