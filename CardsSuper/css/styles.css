@@ -45,7 +45,6 @@ header{
     z-index:999;
 }
 
-
 .barraNav p {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
@@ -79,6 +78,16 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover{
+    color:#1CD1B0;
+
+}
+nav li:hover{
+    transition: 1s;
+    transform: scale(2);
+    background-color:#001D2D ;
+    border-radius: 5px;
+}
 
 /*<!-------------------------------------------MAIN------------------------------------------->*/
 main {
@@ -107,13 +116,14 @@ main {
     position: absolute;
     bottom: 50%;
     right: 1rem;
-    padding: 1rem;
-
+    padding: 0.3rem;
+    text-align: center;
     background-color: #00669F;
     color: white;
     z-index: 999;
 
 }
+
 .logo {
     border-radius: 50%;
 
@@ -142,30 +152,38 @@ main {
 .desc h2 {
     margin-bottom: 2rem;
 }
-
+.desc p{
+    padding-bottom: 20px;
+}
 .desc a {
-
     padding: 10px 30px;
-    
+    position: relative;
     text-align: center;
-
+    bottom: 0px;
     text-decoration: none;
 
     color: white;
     background-color: #00669F;
+    border-radius: 1rem;
+}
+
+.desc a:hover, .card>a:hover{
+    transition: .5s;
+    color: #49f7d7;
+    background-color: #001D2D;
 }
 
 .fas{
     position: absolute;
-    top:0.5rem;
-    left: 0.5rem;
+    top:1rem;
+    left: 1rem;
     width: 3rem;   
 }
+
 .fa-heart{
-    width: 15px;
+    font-size: 1.5rem;
     color: red;
-    display: flex;
-    align-items: flex-start;
+    animation: latido 3s infinite;
 }
 
 /*<!--Primer Batman-->*/
@@ -183,9 +201,8 @@ main {
     align-items: center;
     
     background-color: #F3F3F3;
-    border-radius: 5%;
+    border-radius: 1rem;
 }
-
 
 /*<!--Harley-->*/
 .Harley {
@@ -202,7 +219,7 @@ main {
     align-items: center;
 
     background-color:#F3F3F3;
-    border-radius: 5%;
+    border-radius: 1rem;
 }
 
 .mujerM {
@@ -220,7 +237,7 @@ main {
     align-items: center;
 
     background-color:#F3F3F3;
-    border-radius: 5%;
+    border-radius: 1rem;
 }
 
 /*<!--SegundoBatman-->*/
@@ -239,7 +256,12 @@ main {
     align-items: center;
 
     background-color:#F3F3F3;
-    border-radius: 5%;
+    border-radius: 1rem;
+}
+
+img:hover{
+    animation: super 2s infinite;
+    z-index: 300;
 }
 
 .imgsuper{
@@ -249,6 +271,7 @@ main {
     position: relative;
     top: 7.5rem;
 }
+
 /*<!--footer-->*/
 footer {
 
@@ -377,7 +400,6 @@ footer div {
 
     display: flex;
     justify-content: center;
-    
 }
 
 /*-------------------------------------------REGISTRO-------------------------------------------*/
@@ -463,7 +485,7 @@ footer div {
     text-decoration: none;
 }
 
-.enviar{
+input[type="submit"]{
     width: 45%;
     height: 3rem;
 
@@ -475,8 +497,7 @@ footer div {
     border-radius: 10px;
     background-color: #49f7d7;
 }
-
-.resetear {
+input[type="reset"]{
     width: 45%;
     height: 3rem;
 
@@ -488,20 +509,20 @@ footer div {
     border-radius: 10px;
     background-color: #8888;
 }
-
-
-.rese {
+/* Dos botones totalmente innecesarios
+input[type="reset"] {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     height: 3rem;
     width: 45%;
-
+    margin: 1rem;
     position: relative;
     padding: 1rem;
     border-radius: 15px;
     background-color: #888888;
 }
-.env {
+
+input[type="submit"]{
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     height: 3rem;
@@ -511,14 +532,16 @@ footer div {
     padding: 1rem;
     border-radius: 15px;
     background-color: #1CD1B0;
-}
+}*/
 
 input[type="submit"]:hover{
     background-color: rgb(112, 247, 112);
+    transition: 1s;
 }
 
 input[type="reset"]:hover{
     background-color: rgb(247, 121, 112);
+    transition: 1s;
 }
 
 /*-------------------------------------------FORMULARIO-------------------------------------------*/
@@ -556,6 +579,7 @@ input[type="reset"]:hover{
     position: relative;
     padding: 1rem;
 }
+
 /*formulario*/
 .segundoDiv{
     width: 100%;
@@ -574,12 +598,12 @@ input[type="reset"]:hover{
     width: 100%;
 }
 
+/*parte izquierda*/
 .divIzq {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 1rem 2rem;
-
 }
 
 .divIzq label {
@@ -592,90 +616,109 @@ input[type="reset"]:hover{
 .divIzq input{
     height: 3rem;
     border-radius: 1rem;
-    
+
 }
 
-.descripcion{
-    size: 300px;
-    
+input.descripcion{
+    height: 20rem;
+    margin-top: 3rem;
+
 }
 
-/*PORQUE NO ANDAAAAAAAAAAAAAAAAAAAAAAAA*/
-input [type="text"] {
-    background-color: red;
-}
-
+/*parte derecha*/
 .divDer {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 1rem 2rem;
-
 }
-.divDer label{
-    position: relative;
+
+.divDer>label{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: start;
-    
-}
 
-/*PORQUE NO ANDAAAAAAAAAAAAAAAAAAAAAAAA*/
-input [type="text"]{
-    background-color: rebeccapurple;
 }
 
 .divDer select{
     height: 3rem;
-    
     border-radius: 1rem;
 }
 
+input.archivo{
+    color: black;
+    padding: 0.5rem;
+}
+
+.divDer input {
+    margin-right: 1rem;
+}
+
+.poder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: start;
+}
+
+.poder>label, .tipoPersonaje>label{
+    padding: 0.5rem;
+}
+
+.tipoPersonaje{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: start;
+}
+
 .enviarFormulario input {
-    width: 100%;
+    width: 100% ;
     height: 100%;
 
     font-size: 2rem;
     font-weight: 700;
 
     position: relative;
-    margin: 10px;
+    margin: 1rem;
+    padding: 0.5rem 4rem;
     color: #001D2D;
     background-color: #1CD1B0;
+    border-radius: 23px;
 }
 
 .enviarFormulario input:hover {
     color: white;
     background-color:  #001D2D;
+    transition: 1s;
 }
 
-/*.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+@keyframes latido {
+    0% {
+        transform: scale(1)   
+        }
+
+    20% {
+        transform: scale( 1.25 )
+        }
+
+    40% {
+        transform: scale(1.5)
+    }
 }
 
-.segundoDiv {
-    display: flex;
-    align-items: center;
+@keyframes super {
+    0% {
+        transform: scale(1) rotate(0deg);
+        }
 
-    justify-content: space-between;
-}
+    50% {
+        transform: scale(2) rotate(360deg);
+        }
 
-.tercerdivForm {
-    position: relative;
-    padding: 10px;
-}
-.tercerDivForm form {
-    display: flex;
-    flex-direction: column;
-    
+    100% {
+        transform: scale(1.25) rotate(-360deg);
+    }
 
 }
-
-.tercerDiv {
-    display: flex;
-    flex-direction: column;
-}
-*/
