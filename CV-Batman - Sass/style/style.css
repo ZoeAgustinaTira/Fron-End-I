@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+header section {
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+}
+
+header section h1 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  line-height: 85%;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #005677;
+  background-color: #C4C4C4;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+main h3 {
+  font-size: 1rem;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+  margin: 1rem 0rem;
+  padding-left: 3rem;
+  color: #005677;
+  background-color: #C4C4C4;
+}
+
+main .negrita dl {
+  padding-left: 2rem;
+  gap: 1rem;
+}
+
+main .negrita dl span {
+  font-weight: bold;
+}
+
+main .negrita dd {
+  padding-left: 8rem;
+  line-height: 2rem;
+}
+
+main .DatosPersonales {
+  font-family: "Roboto";
+  font-style: mixed;
+  font-size: 1rem;
+  text-align: Left;
+  vertical-align: Top;
+}
+
+main .DatosPersonales li {
+  padding: 1rem 3rem;
+}
+
+main .DatosPersonales li span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  background-color: #005677;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

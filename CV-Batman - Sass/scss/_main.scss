@@ -1,0 +1,55 @@
+main {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+
+    h3 {
+        font-size: 1rem;
+        font-family: "Roboto";
+        
+        
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        word-spacing: 1rem;
+        margin: 1rem 0rem;
+        padding-left: 3rem;
+        color : #005677;
+        background-color: #C4C4C4;
+    
+    }
+    
+    .negrita {
+        dl{
+            padding-left: 2rem;
+            gap:1rem;
+            span{ 
+                font-weight: bold;
+            }
+        }
+        dd{
+            padding-left: 8rem;
+            line-height: 2rem;
+        }
+        
+    }
+    
+    .DatosPersonales{
+        font-family: "Roboto";
+        font-style: (mixed);
+        font-size: 1rem;
+    
+        text-align: Left;
+        vertical-align: Top ;
+                li{
+                    padding: 1rem 3rem;
+                    span {
+                        font-style: italic;
+                        font-weight: bold;
+                    }
+
+                }
+                    
+    }
+
+
+}

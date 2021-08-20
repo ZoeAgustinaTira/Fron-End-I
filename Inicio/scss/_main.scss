@@ -1,0 +1,143 @@
+main {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-main;
+    padding: 50px;
+
+        .ppal{
+            display: flex;
+            justify-content: center;
+            
+            .banner{
+                height: 90vh;
+                background-image: url(/img/fondo.jpg);
+                opacity: 20%;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+                    p{
+                        font-size: 2rem;
+                        margin: 3rem 2rem;
+                    }
+                    a{
+                        width: 40%;
+                        display: inline-block;
+                        font-size: 1rem;
+                        padding: 1rem 2rem;
+                        text-decoration: none;
+                        color: aqua;
+                        background-color: brown;
+                        
+                    }
+            }
+
+            .divDerecho{
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 2rem;
+                        
+
+                                .enlaceProyectos{
+                                    height: 45vh;
+                                    width: 100vh;
+                                    
+                                    background-image: url(/img/proyect.jpg);
+                                    background-size: cover;
+                                    opacity: 20%;
+
+                                }
+                                .contacto{
+                                    height: 45vh;
+                                    width: 100vh;
+                                    background-color:aqua;
+                                    opacity: 20%;
+                                    background-size: cover;
+                                }
+                                
+                    }
+                    
+        }
+        
+
+        #misProyectos{
+            height: 100%;
+            width: 100%;
+
+            
+            display: flex;
+            flex-direction: column;
+            
+            
+            
+
+            h3 {
+                font-family: "Architects Daughter", sans-serif;
+                font-size: 3rem;
+                padding: 3rem;
+                color: $color-secundario;
+                text-align: center;
+            }
+                    div{
+                        display: flex;
+                        justify-content: space-around;
+                        padding-bottom: 2rem;
+                        flex-wrap: wrap;
+                        
+        
+                    }
+
+                    a{
+                        display: inline-block;
+                        padding: 7rem;
+                        background-color: aqua;
+                        opacity: 80%;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        text-decoration: none;
+                        
+                    }
+                    
+                    .lemon a{
+                        background-image: url(/img/lemon-pie\.jpg);
+                        background-size: cover;
+                        
+                    }
+                    .batman a{
+                        background-image: url(/img/logo_batman.svg);
+                        
+                    }
+                    .pizza a{
+                        background-image: url(/img/VectorPizza.svg);
+                        
+                    }
+                    .pet a{
+                        
+                        background-image: url(/img/pawprint.svg);
+                        
+                    }
+                    .super a{
+                        background-image: url(/img/suer.png);
+                        
+                    }
+                    .ecommers a{
+                        
+                        background-image: url(/img/logoJoystick.svg);
+                    }
+                    
+
+        }    
+        
+        
+    
+            
+
+
+        
+        
+}

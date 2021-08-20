@@ -1,0 +1,53 @@
+header{
+    position: relative;
+    height: 10rem;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-header-footer;
+    
+
+    h1{
+        font-family: 'Cinzel', sans-serif;
+        font-size: 2rem;
+        position: absolute;
+        letter-spacing: 0.5rem;
+        color: $color-principal;
+        
+
+    }
+    h2{
+        font-family: 'Tangerine', sans-serif;
+        font-size: 5rem;
+        color: $color-secundario;
+        opacity: 20%;
+        position: absolute;
+        letter-spacing: 0.5rem;
+    }
+
+    .divBajo{
+        margin-top: 10rem;
+        padding-right: 3rem;
+        width: 100%;
+        background: linear-gradient(to bottom, $color-header-footer, $color-main);
+        gap: 100px;
+        
+        a{
+            color: $color-secundario;
+            padding: 10px;
+            background-color: $color-main;
+            opacity: 50%;
+            text-decoration: none;
+            border-radius: 10px;
+        
+            &:hover{
+            opacity: 100%;
+            transform: scale(2);
+        }
+        }
+    }
+
+}

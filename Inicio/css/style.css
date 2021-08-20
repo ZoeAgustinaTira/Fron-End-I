@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel&family=Tangerine&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  height: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #001930;
+}
+
+header h1 {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  letter-spacing: 0.5rem;
+  color: #1ff7e5;
+}
+
+header h2 {
+  font-family: 'Tangerine', sans-serif;
+  font-size: 5rem;
+  color: #11a79a;
+  opacity: 20%;
+  position: absolute;
+  letter-spacing: 0.5rem;
+}
+
+header .divBajo {
+  margin-top: 10rem;
+  padding-right: 3rem;
+  width: 100%;
+  background: linear-gradient(to bottom, #001930, #001f3a);
+  gap: 100px;
+}
+
+header .divBajo a {
+  color: #11a79a;
+  padding: 10px;
+  background-color: #001f3a;
+  opacity: 50%;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+header .divBajo a:hover {
+  opacity: 100%;
+  transform: scale(2);
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #001f3a;
+  padding: 50px;
+}
+
+main .ppal {
+  display: flex;
+  justify-content: center;
+}
+
+main .ppal .banner {
+  height: 90vh;
+  background-image: url(/img/fondo.jpg);
+  opacity: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .ppal .banner p {
+  font-size: 2rem;
+  margin: 3rem 2rem;
+}
+
+main .ppal .banner a {
+  width: 40%;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: aqua;
+  background-color: brown;
+}
+
+main .ppal .divDerecho {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+main .ppal .divDerecho .enlaceProyectos {
+  height: 45vh;
+  width: 100vh;
+  background-image: url(/img/proyect.jpg);
+  background-size: cover;
+  opacity: 20%;
+}
+
+main .ppal .divDerecho .contacto {
+  height: 45vh;
+  width: 100vh;
+  background-color: aqua;
+  opacity: 20%;
+  background-size: cover;
+}
+
+main #misProyectos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main #misProyectos h3 {
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 3rem;
+  padding: 3rem;
+  color: #11a79a;
+  text-align: center;
+}
+
+main #misProyectos div {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+main #misProyectos a {
+  display: inline-block;
+  padding: 7rem;
+  background-color: aqua;
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+}
+
+main #misProyectos .lemon a {
+  background-image: url(/img/lemon-pie\.jpg);
+  background-size: cover;
+}
+
+main #misProyectos .batman a {
+  background-image: url(/img/logo_batman.svg);
+}
+
+main #misProyectos .pizza a {
+  background-image: url(/img/VectorPizza.svg);
+}
+
+main #misProyectos .pet a {
+  background-image: url(/img/pawprint.svg);
+}
+
+main #misProyectos .super a {
+  background-image: url(/img/suer.png);
+}
+
+main #misProyectos .ecommers a {
+  background-image: url(/img/logoJoystick.svg);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: #001930;
+}
+
+footer a {
+  padding: 2rem;
+  color: #11a79a;
+  opacity: 50%;
+}
+
+footer .fa-linkedin-in, footer .fa-github, footer .fa-instagram, footer .fa-facebook-f {
+  font-size: 1.5rem;
+}

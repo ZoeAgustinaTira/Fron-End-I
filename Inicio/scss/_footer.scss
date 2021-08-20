@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5rem;
+
+    background-color: #001930;
+
+        a {
+            padding: 2rem;
+            color: $color-secundario;
+            opacity: 50%;
+        }
+
+        .fa-linkedin-in, .fa-github, .fa-instagram, .fa-facebook-f{
+            font-size: 1.5rem;
+        }
+}
