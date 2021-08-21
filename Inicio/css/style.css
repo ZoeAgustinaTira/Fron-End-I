@@ -61,39 +61,62 @@ main {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   background-color: #001f3a;
   padding: 50px;
+  height: 100%;
+  width: 100%;
 }
 
 main .ppal {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-main .ppal .banner {
-  height: 90vh;
-  background-image: url(/img/fondo.jpg);
-  opacity: 20%;
+main .ppal .derecha {
+  height: 110%;
+  width: 57%;
+  background-image: url(/img/mis15.jpg);
+  opacity: 50%;
+  background-repeat: no-repeat;
+}
+
+main .ppal .derecha div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  border-width: 0.2rem;
+  border-style: solid;
+  height: 100%;
+  border-color: #11a79a;
 }
 
-main .ppal .banner p {
+main .ppal .derecha div a {
+  width: 20%;
+  padding: 1rem;
+  background-color: #001930;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: #1ff7e5;
+}
+
+main .ppal .derecha div a:hover {
+  transform: scale(1.3);
+  color: #1ff7e5;
+  background-color: #001f3a;
+  opacity: 100%;
+}
+
+main .ppal .derecha p {
   font-size: 2rem;
   margin: 3rem 2rem;
-}
-
-main .ppal .banner a {
-  width: 40%;
-  display: inline-block;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  color: aqua;
-  background-color: brown;
 }
 
 main .ppal .divDerecho {
@@ -121,6 +144,7 @@ main .ppal .divDerecho .contacto {
 main #misProyectos {
   height: 100%;
   width: 100%;
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
 }
@@ -148,6 +172,7 @@ main #misProyectos a {
   background-repeat: no-repeat;
   background-size: contain;
   text-decoration: none;
+  transition: 2s;
 }
 
 main #misProyectos .lemon a {
@@ -157,6 +182,7 @@ main #misProyectos .lemon a {
 
 main #misProyectos .batman a {
   background-image: url(/img/logo_batman.svg);
+  text-align: center;
 }
 
 main #misProyectos .pizza a {
@@ -173,6 +199,26 @@ main #misProyectos .super a {
 
 main #misProyectos .ecommers a {
   background-image: url(/img/logoJoystick.svg);
+}
+
+main #misProyectos .lemon a:hover, main #misProyectos .batman a:hover, main #misProyectos .pizza a:hover, main #misProyectos .pet a:hover, main #misProyectos .super a:hover, main #misProyectos .ecommers a:hover {
+  transform: scale(1.2);
+}
+
+main .arriba {
+  height: 3rem;
+  width: 3rem;
+  opacity: 50%;
+  text-align: center;
+  text-align: end;
+  border-radius: 50px;
+  background-color: #1ff7e5;
+}
+
+main .arriba i {
+  font-size: 1.8rem;
+  padding: 0.65rem;
+  color: #001930;
 }
 
 footer {

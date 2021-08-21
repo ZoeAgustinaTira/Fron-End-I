@@ -2,38 +2,61 @@ main {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     background-color: $color-main;
     padding: 50px;
+    height: 100%;
+    width: 100%;
+    
 
         .ppal{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .derecha{
+                height: 110%;
+                width: 57%;
+                background-image: url(/img/mis15.jpg);
+                
+                opacity: 50%;
+                background-repeat: no-repeat;
+                
             
-            .banner{
-                height: 90vh;
-                background-image: url(/img/fondo.jpg);
-                opacity: 20%;
-                
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-width: 0.2rem;
+                    border-style: solid;
+                    height: 100%;
+                    border-color: rgb(17, 167, 154);
+
+                    a{
+                        width: 20%;
+                        padding: 1rem;
+                        background-color: $color-header-footer;
+                        text-decoration: none;
+                        border-radius: 1rem;
+                        color: $color-principal;
+                    }
+                    a:hover{
+                        transform: scale(1.3);
+                        color: $color-principal;
+                        background-color: $color-main;
+                        opacity: 100%;
+                    }
+                }
 
                     p{
                         font-size: 2rem;
                         margin: 3rem 2rem;
-                    }
-                    a{
-                        width: 40%;
-                        display: inline-block;
-                        font-size: 1rem;
-                        padding: 1rem 2rem;
-                        text-decoration: none;
-                        color: aqua;
-                        background-color: brown;
-                        
                     }
             }
 
@@ -69,13 +92,11 @@ main {
             height: 100%;
             width: 100%;
 
+            margin-top: 15rem;
             
             display: flex;
             flex-direction: column;
             
-            
-            
-
             h3 {
                 font-family: "Architects Daughter", sans-serif;
                 font-size: 3rem;
@@ -100,7 +121,7 @@ main {
                         background-repeat: no-repeat;
                         background-size: contain;
                         text-decoration: none;
-                        
+                        transition: 2s;
                     }
                     
                     .lemon a{
@@ -110,6 +131,7 @@ main {
                     }
                     .batman a{
                         background-image: url(/img/logo_batman.svg);
+                        text-align: center;
                         
                     }
                     .pizza a{
@@ -129,10 +151,30 @@ main {
                         
                         background-image: url(/img/logoJoystick.svg);
                     }
-                    
+                    .lemon a:hover, .batman a:hover,.pizza a:hover,.pet a:hover,.super a:hover,.ecommers a:hover {
+                        transform: scale(1.2);
+                    }
 
         }    
         
+
+        .arriba{
+                height: 3rem;
+                width: 3rem;
+                opacity: 50%;
+                text-align: center;
+                
+                text-align: end;
+                border-radius: 50px;
+                background-color: $color-principal;
+                
+                i{
+                    font-size: 1.8rem;
+                    padding: 0.65rem;
+                    color: $color-header-footer;
+                }
+            
+        }
         
     
             
