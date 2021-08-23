@@ -82,7 +82,7 @@ main .ppal {
 main .ppal .derecha {
   height: 110%;
   width: 57%;
-  background-image: url(/img/mis15.jpg);
+  background-image: url(img/mis15.jpg);
   opacity: 50%;
   background-repeat: no-repeat;
 }
@@ -176,29 +176,29 @@ main #misProyectos a {
 }
 
 main #misProyectos .lemon a {
-  background-image: url(/img/lemon-pie\.jpg);
+  background-image: url(img/lemon-pie\.jpg);
   background-size: cover;
 }
 
 main #misProyectos .batman a {
-  background-image: url(/img/logo_batman.svg);
+  background-image: url(img/logo_batman.svg);
   text-align: center;
 }
 
 main #misProyectos .pizza a {
-  background-image: url(/img/VectorPizza.svg);
+  background-image: url(img/VectorPizza.svg);
 }
 
 main #misProyectos .pet a {
-  background-image: url(/img/pawprint.svg);
+  background-image: url(img/pawprint.svg);
 }
 
 main #misProyectos .super a {
-  background-image: url(/img/suer.png);
+  background-image: url(img/suer.png);
 }
 
 main #misProyectos .ecommers a {
-  background-image: url(/img/logoJoystick.svg);
+  background-image: url(img/logoJoystick.svg);
 }
 
 main #misProyectos .lemon a:hover, main #misProyectos .batman a:hover, main #misProyectos .pizza a:hover, main #misProyectos .pet a:hover, main #misProyectos .super a:hover, main #misProyectos .ecommers a:hover {
