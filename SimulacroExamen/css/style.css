@@ -9,6 +9,7 @@
 }
 /*--------------------HEADER-----------------------------*/
 header{
+    width: 100%;
     font-family: "Roboto",sans-serif;
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,6 @@ header{
     text-decoration: none;
     list-style-type: none;
     
-    
 }
 .navegador nav ul li a{
     font-size: 1rem;
@@ -56,8 +56,18 @@ header{
     color: white;
 }
 .fas{
+    font-size: 1.5rem;
     padding: 1rem;
     color: #D01418;
+}
+
+.navegador nav ul li:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+.navegador nav ul li a:hover {
+    color: #D01418;
+    transition: .5s;
 }
 
 /*-------------------------MAIN-----------------------------*/
@@ -99,7 +109,16 @@ main {
     background-color: #D01418;
     border-radius: 10px;
 }
+.comprar:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
 
+.comprar a:hover{
+    color: #D01418;
+    background-color: unset;
+    transition: 0.5s;
+}
 /*<!--Productos destacados-->*/
 .productosDestacados {
     display: flex;
@@ -260,3 +279,43 @@ footer{
     background-color: #C4C4C4;
 }
 
+
+@media screen and (max-width: 680px) {
+    .navegador{
+        visibility: hidden;
+    }
+    .navegador nav ul{
+        display: unset;
+    }
+
+    .banner div{
+        text-align: center;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productosEstre{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .silla, .compu{
+        width: 80%;
+        margin: 0.7rem;
+    }
+
+    .footerSuperior{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo div img {
+        padding: 1rem 1rem 1rem 0rem;
+    }
+}
