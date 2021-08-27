@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.43rem;
+  line-height: 4.37rem;
+  letter-spacing: 0.62rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+header div nav ul {
+  display: flex;
+}
+
+header div nav ul li {
+  list-style-type: none;
+}
+
+header div nav ul li a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main .cabecera {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  position: relative;
+}
+
+main .cabecera .celeste {
+  position: absolute;
+  left: 8rem;
+  background-color: #03faee;
+  height: 2.5rem;
+  width: 18%;
+  z-index: -1;
+}
+
+main .cabecera .divIzq {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2rem;
+}
+
+main .cabecera .divIzq p {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  line-height: 30px;
+  color: #8b8b8b;
+}
+
+main .cabecera .divIzq div {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+main .cabecera .divIzq div a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #000;
+  background-color: #03faee;
+}
+
+main .cabecera .divDerecho {
+  width: 30%;
+  height: 500px;
+  background-image: url(../img/wireframe.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .conteiner-texto {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+main .conteiner-texto .carta {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+main .conteiner-texto .carta div {
+  text-align: left;
+}
+
+main .conteiner-texto .carta .num {
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: -7px 0px 0px 2px #03faee;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+main .conteiner-texto .carta .titulo {
+  background-color: #03faee;
+  width: 1rem;
+  height: 0.7rem;
+  display: inline-block;
+}
+
+main .conteiner-texto .carta .titulo p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+main .conteiner-texto .carta .texto {
+  padding-top: 2rem;
+  line-height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+footer .fab {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: -7px 0px 0px 2px #03faee;
+  border-radius: 50%;
+}

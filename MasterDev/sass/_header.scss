@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    
+    div{
+        nav{
+            
+
+            ul{
+                display: flex;
+                li{
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

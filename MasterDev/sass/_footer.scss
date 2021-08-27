@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    .fab{ 
+        height: 3rem;
+        width: 3rem;
+        
+        font-size: 1.2rem;
+        display: inline-block;
+
+        text-align: center;
+        padding-top: 0.8rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: -7px 0px 0px 2px $bg-primary;
+        border-radius: 50%;
+
+    
+    }
+}
