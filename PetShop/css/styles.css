@@ -135,15 +135,11 @@ img {
 h1 {
     font-size: 25px;
     padding-left: 58px;
-
-
 }
 
 /*--------------------------Estilos parra de nav-----------------------------------*/
-
-
 nav a:hover {
-    color: #3C2313;
+    color: var(--tercer-color);
 }
 
 nav .fas {
@@ -155,12 +151,11 @@ nav .fas {
     text-align: right;
 
 }
-
-.menu {
+.respmenu {
     margin: 0 30px 0 0;
 }
 
-.menu a {
+.respmenu a {
     color: var(--cuarto-color);
     text-decoration: none;
     padding: 10px;
@@ -170,18 +165,6 @@ nav .fas {
     /*clear: right;*/
 }
 
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-
-#toggle {
-    display: none;
-}
 
 /*-----------------------------Pra que se mueva el logo-----------------------------*/
 h1:hover {
@@ -522,10 +505,11 @@ footer {
     color: var(--segundo-color);
 }
 
-/*
-input [type="text"], input [type="email"]: focus{
+
+input [type="text"], input [type="email"]:focus{
     border: 3px solid 
-}*/
+}
+
 
 /*--------------------Parte de abajo----------------------*/
 .parrafo-footer {
@@ -538,12 +522,10 @@ input [type="text"], input [type="email"]: focus{
     background-color: var(--primer-color);
 }
 
-.fa-hamburger {
-    visibility: hidden;
+/*hamburguesita*/
+.fa-bars, .fa-times, input[type="checkbox"]{
+    display: none;
 }
-
-
-
 /*------------------------------RESPONSIVE--------------------------*/
 @media screen and (max-width: 600px) {
 
@@ -570,7 +552,6 @@ input [type="text"], input [type="email"]: focus{
 
     header nav ul li {
         display: none;
-
     }
 
     footer {
@@ -602,7 +583,6 @@ input [type="text"], input [type="email"]: focus{
         padding: 0;
     }
 
-
     .ubicaciones{
         align-items: center;
         justify-content: center;
@@ -626,50 +606,46 @@ input [type="text"], input [type="email"]: focus{
         top: 1rem;
     }
 
-    /*.fa-hamburger {
-        visibility:unset;
-    }*/
-
-/*-------------------------Hamburguesita-----------------*/
-    label {
+    /*-------------------------Hamburguesita-----------------*/
+    .respmenu .fa-bars, .fa-times, .respmenu input[type="checkbox"] {
         display: block;
-        cursor: pointer;
     }
-    .menu {
-        text-align: center;
-        width: 100%;
+    .respmenu a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        background-color: var(--segundo-color);
+        opacity: 90%;
+        margin: 1px;
+        border-radius: 10px;
+    }
+    .respmenu a:hover {
+        background-color: #8b8b8b;
+    }
+    .respmenu nav {
         display: none;
-        background-color:var(--segundo-color);
+        position: fixed;
+        right: 1rem;
+        z-index: 9999;
     }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid #eaeaeb;
-        margin: 0;
-    }
-    #toggle:checked + .menu {
-        display: block;
-    }
-}
-
-
-/* @media  screen and (max-width: 480px){
-    html{
-        font-size: 20px;
-    }
-    nav ul{
-        display: none;
-    }
-    .icono-menu{
-        display: block;
-    }
-    section, footer{
-        padding: unset;
-    }
-    footer{
+    .respmenu nav ul {
+        display: flex;
         flex-direction: column;
     }
-    footer div{
-        width: unset;
-        margin-bottom: .2rem;
+    .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 1.5rem;
+        pointer-events: none;
     }
-} */
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+}
