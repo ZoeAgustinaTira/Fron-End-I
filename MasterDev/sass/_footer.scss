@@ -1,9 +1,13 @@
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 2rem;
+    flex-wrap: wrap;
 
+    div{
+        padding-top: 1rem;
+    }
     .fab{ 
         height: 3rem;
         width: 3rem;
@@ -17,7 +21,5 @@ footer{
         margin-bottom: 1rem;
         box-shadow: -7px 0px 0px 2px $bg-primary;
         border-radius: 50%;
-
-    
     }
 }

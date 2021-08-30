@@ -18,8 +18,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 8rem;
+  justify-content: space-around;
+  padding: 2rem;
+  /*Oculto el check y la hamburguesita*/
+  /*Menu hamburguesita*/
 }
 
 header div nav ul {
@@ -33,6 +35,57 @@ header div nav ul li {
 header div nav ul li a {
   text-decoration: none;
   padding: 1rem;
+  color: black;
+}
+
+header .fas, header input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  header .respmenu .fas, header .respmenu input[type="checkbox"] {
+    display: block;
+  }
+  header .respmenu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background: #03faee;
+    opacity: 90%;
+    margin: 1px;
+    border-radius: 10px;
+  }
+  header .respmenu a:hover {
+    background-color: #8b8b8b;
+  }
+  header .respmenu nav {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    z-index: 9999;
+  }
+  header .respmenu nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .respmenu .fa-bars, header .respmenu .fa-times {
+    font-size: 1.5rem;
+    pointer-events: none;
+  }
+  header .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  header .respmenu input:checked ~ nav {
+    display: block;
+    transition: 2s;
+    margin-right: 1rem;
+  }
+  header .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  header .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
 }
 
 main {
@@ -44,17 +97,9 @@ main .cabecera {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-around;
-  position: relative;
-}
-
-main .cabecera .celeste {
-  position: absolute;
-  left: 8rem;
-  background-color: #03faee;
-  height: 2.5rem;
-  width: 18%;
-  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 main .cabecera .divIzq {
@@ -62,7 +107,8 @@ main .cabecera .divIzq {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2rem;
+  height: 100%;
+  position: relative;
 }
 
 main .cabecera .divIzq p {
@@ -73,6 +119,14 @@ main .cabecera .divIzq p {
   color: #8b8b8b;
 }
 
+main .cabecera .divIzq span {
+  background-color: #03faee;
+  height: 2.5rem;
+  width: 60%;
+  z-index: -1;
+  position: absolute;
+}
+
 main .cabecera .divIzq div {
   display: inline-block;
   margin-top: 1rem;
@@ -81,31 +135,35 @@ main .cabecera .divIzq div {
 main .cabecera .divIzq div a {
   display: inline-block;
   padding: 1rem 2rem;
+  margin-top: 1rem;
   margin-right: 1rem;
   text-decoration: none;
   border-radius: 10px;
   color: #000;
   background-color: #03faee;
+  width: 130px;
 }
 
-main .cabecera .divDerecho {
-  width: 30%;
-  height: 500px;
-  background-image: url(../img/wireframe.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+main .cabecera .divDer {
+  text-align: center;
+}
+
+main .cabecera .divDer img {
+  width: 100%;
 }
 
 main .conteiner-texto {
   display: flex;
   padding: 2rem;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 main .conteiner-texto .carta {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 300px;
+  margin-top: 1rem;
 }
 
 main .conteiner-texto .carta div {
@@ -143,9 +201,14 @@ main .conteiner-texto .carta .texto {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+footer div {
+  padding-top: 1rem;
 }
 
 footer .fab {
