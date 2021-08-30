@@ -74,6 +74,9 @@ header .fas, header input[type="checkbox"] {
   }
   header .respmenu input[type="checkbox"] {
     opacity: 0;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
   }
   header .respmenu input:checked ~ nav {
     display: block;
