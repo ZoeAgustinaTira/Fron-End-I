@@ -44,6 +44,7 @@ header .divBajo {
 }
 
 header .divBajo a {
+  font-size: 1.5rem;
   color: #11a79a;
   padding: 10px;
   background-color: #001f3a;
@@ -55,6 +56,7 @@ header .divBajo a {
 header .divBajo a:hover {
   opacity: 100%;
   transform: scale(2);
+  transition: 0.5s;
 }
 
 main {
@@ -80,6 +82,8 @@ main .ppal {
 }
 
 main .ppal .derecha {
+  display: inline-block;
+  margin-top: 50px;
   height: 110%;
   width: 57%;
   background-image: url(../img/mis15.jpg);
@@ -90,7 +94,7 @@ main .ppal .derecha {
 main .ppal .derecha div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-width: 0.2rem;
   border-style: solid;
@@ -112,11 +116,7 @@ main .ppal .derecha div a:hover {
   color: #1ff7e5;
   background-color: #001f3a;
   opacity: 100%;
-}
-
-main .ppal .derecha p {
-  font-size: 2rem;
-  margin: 3rem 2rem;
+  transition: 1s;
 }
 
 main .ppal .divDerecho {
@@ -147,6 +147,9 @@ main #misProyectos {
   margin-top: 15rem;
   display: flex;
   flex-direction: column;
+  /*.lemon:hover, .batman:hover,.pizza:hover,.pet:hover,.super:hover,.ecommers:hover {
+                        transform: scale(1.1);
+                    }*/
 }
 
 main #misProyectos h3 {
@@ -160,48 +163,63 @@ main #misProyectos h3 {
 main #misProyectos div {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 2rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main #misProyectos a {
+  font-family: "Architects Daughter",sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   display: inline-block;
-  padding: 7rem;
+  padding: 0.5rem 1rem;
   background-color: aqua;
-  opacity: 80%;
-  background-repeat: no-repeat;
-  background-size: contain;
+  opacity: 60%;
   text-decoration: none;
+  color: black;
+  border-radius: 5px;
   transition: 2s;
 }
 
-main #misProyectos .lemon a {
+main #misProyectos .lemon {
   background-image: url(../img/lemon-pie\.jpg);
-  background-size: cover;
 }
 
-main #misProyectos .batman a {
+main #misProyectos .batman {
   background-image: url(../img/logo_batman.svg);
-  text-align: center;
 }
 
-main #misProyectos .pizza a {
+main #misProyectos .pizza {
   background-image: url(../img/VectorPizza.svg);
 }
 
-main #misProyectos .pet a {
+main #misProyectos .pet {
   background-image: url(../img/pawprint.svg);
 }
 
-main #misProyectos .super a {
+main #misProyectos .super {
   background-image: url(../img/suer.png);
 }
 
-main #misProyectos .ecommers a {
+main #misProyectos .ecommers {
   background-image: url(../img/logoJoystick.svg);
 }
 
-main #misProyectos .lemon a:hover, main #misProyectos .batman a:hover, main #misProyectos .pizza a:hover, main #misProyectos .pet a:hover, main #misProyectos .super a:hover, main #misProyectos .ecommers a:hover {
+main #misProyectos .devMagister {
+  background-image: url(../img/devagister.svg);
+}
+
+main #misProyectos .lemon, main #misProyectos .batman, main #misProyectos .pizza, main #misProyectos .pet, main #misProyectos .super, main #misProyectos .ecommers, main #misProyectos .devMagister {
+  width: 30%;
+  height: 200px;
+  transition: 2s;
+}
+
+main #misProyectos .lemon a:hover, main #misProyectos .batman a:hover, main #misProyectos .pizza a:hover, main #misProyectos .pet a:hover, main #misProyectos .super a:hover, main #misProyectos .ecommers a:hover, main #misProyectos .devMagister a:hover {
   transform: scale(1.2);
 }
 
@@ -225,7 +243,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 10rem;
   background-color: #001930;
 }
 
@@ -236,5 +254,5 @@ footer a {
 }
 
 footer .fa-linkedin-in, footer .fa-github, footer .fa-instagram, footer .fa-facebook-f {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
