@@ -98,6 +98,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -12225,3 +12226,26 @@ section#contact form#contactForm :-ms-input-placeholder {
 .redes{
   margin: 2rem 0rem;
 }
+
+.video{ 
+  display: flex;
+  justify-content: center;
+}
+
+/* ------- Carrusel -------*/
+.d-block {
+  height: 400px;
+  width: 400px;
+}
+
+.carousel-inner{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: rgb(255, 173, 190);
+  height: 100%;
+}
+ /*----------prototipo----------*/
+ 
