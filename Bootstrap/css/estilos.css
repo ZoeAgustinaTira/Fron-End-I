@@ -1,0 +1,207 @@
+header {
+  position: relative;
+  /*Saco el borde*/
+}
+
+header .anio {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  color: #ed1c24;
+  text-align: center;
+}
+
+header .anio p {
+  font-size: 1.5rem;
+}
+
+header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6rem;
+  background-color: #1e2d3b;
+}
+
+header .nav-tabs .nav-link {
+  border: none;
+}
+
+header .dropdown-menu {
+  background-color: #1e2d3b;
+}
+
+header .nav-link, header .dropdown-item {
+  font-size: 1.5rem;
+  color: #ed1c24;
+  cursor: pointer;
+}
+
+header .nav-link:hover {
+  color: #edcd1f;
+  transition: 0.5s;
+}
+
+main {
+  background-image: url(../img/hormigas.gif);
+}
+
+main textarea {
+  resize: none;
+}
+
+main .carousel {
+  justify-self: center;
+}
+
+main .carousel-inner {
+  height: 500px;
+}
+
+main .carousel-inner .carousel-item, main .carousel-inner .carousel-item .active {
+  height: 100%;
+}
+
+main .carousel-inner .carousel-item .carousel-caption, main .carousel-inner .carousel-item .active .carousel-caption {
+  display: flex;
+  align-items: center;
+}
+
+main .carousel-inner .carousel-item .carousel-caption h5, main .carousel-inner .carousel-item .active .carousel-caption h5 {
+  font-size: 5rem;
+  color: #ed1c24;
+}
+
+main .servicios {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 10px;
+  justify-content: center;
+}
+
+main .servicios .card h5 {
+  padding-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ed1c24;
+}
+
+main .servicios .card p span {
+  font-size: 1.5rem;
+}
+
+main .servicios .card .gifs img {
+  width: 5rem;
+}
+
+main .servicios .card .gif-murcielago {
+  text-align: center;
+}
+
+main .titular {
+  text-align: center;
+}
+
+main .titular h3 {
+  color: #ed1c24;
+  font-size: 5rem;
+}
+
+main .nos {
+  display: flex;
+  justify-content: center;
+}
+
+main .nos .nosotros {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  padding: 2rem;
+}
+
+main .nos .nosotros p {
+  font-size: 1.5rem;
+  display: inline-block;
+  padding-top: 0.5rem;
+}
+
+main .nos .nosotros .rojo {
+  text-align: center;
+  font-weight: 500;
+  font-style: oblique;
+  color: #ed1c24;
+}
+
+main .nos .nosotros .lista {
+  text-align: start;
+}
+
+main .nos .nosotros .lista li {
+  font-size: 1.5rem;
+}
+
+main .nos .nosotros .garantizamos {
+  display: inline-block;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+main .contacto {
+  padding-bottom: 3rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contacto .formulario {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .contacto .formulario input {
+  background-color: #ffbbc2;
+}
+
+main .contacto .formulario .row, main .contacto .formulario .coment {
+  width: 50%;
+  gap: 10px;
+}
+
+main .contacto .formulario textarea {
+  height: 100%;
+  background-color: #ffbbc2;
+}
+
+main .contacto .boton {
+  width: 20%;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffbbc2;
+  font-size: 1.5rem;
+}
+
+main .contacto .boton:hover {
+  background-color: #ff9aa3;
+}
+
+main .contacto .row {
+  justify-content: flex-end;
+}
+
+main .cotizar {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: red;
+}
+
+main .cotizar h4 {
+  font-size: 3rem;
+}

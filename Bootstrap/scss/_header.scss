@@ -1,0 +1,40 @@
+header {
+    position: relative;
+
+    .anio{
+        display: inline-block;
+        padding: 0.5rem 1rem; 
+        position: absolute;
+        color: $color-principal;
+        text-align: center;
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6rem;
+        background-color: $color-fondo-nav;
+    }
+    /*Saco el borde*/
+    .nav-tabs .nav-link{
+        border: none;
+    }
+
+    .dropdown-menu{
+            background-color: $color-fondo-nav ;
+        }
+        
+    .nav-link, .dropdown-item{
+        font-size: 1.5rem;
+        color: $color-principal;
+        cursor: pointer;
+    }
+    .nav-link:hover{
+        color:$color-hover-anchor;
+        transition: 0.5s;
+    }
+    
+}

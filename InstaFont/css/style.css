@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+header .logo {
+  justify-self: start;
+}
+
+header .buscador {
+  justify-self: center;
+  width: 80%;
+}
+
+header .buscador input {
+  width: 100%;
+  height: 2rem;
+}
+
+header .img {
+  justify-self: end;
+}
+
+header .img img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+main {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 7fr;
+  gap: 10px;
+  grid-template-areas: "area1 area2" "area3 area2" "area3 .";
+  justify-content: center;
+}
+
+main .historias {
+  background-color: wheat;
+  border: black 0.4px solid;
+  grid-area: area1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+main .historias img {
+  width: 3rem;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+main .cuerpo {
+  background-color: white;
+  display: grid;
+  grid-area: area3;
+  grid-template-rows: 4rem 5fr 2fr;
+  border: #d8d8d8 0.5px solid;
+}
+
+main .cuerpo .cabecera {
+  display: grid;
+  grid-template-columns: 4rem repeat(2, 1fr);
+  border-bottom: #d8d8d8 0.5px solid;
+}
+
+main .cuerpo .cabecera img {
+  border-radius: 50%;
+  width: 3rem;
+  align-self: center;
+  justify-self: center;
+}
+
+main .cuerpo .cabecera p {
+  justify-self: start;
+  align-self: center;
+}
+
+main .cuerpo .cabecera .fas {
+  justify-self: end;
+  align-self: center;
+  padding-right: 1rem;
+}
+
+main .cuerpo .foto {
+  width: 80%;
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+}
+
+main .cuerpo .foto img {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+main .cuerpo .pie {
+  display: flex;
+  flex-direction: column;
+}
+
+main .cuerpo .pie .reacciones {
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+main .cuerpo .pie .reacciones .far {
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+main .cuerpo .pie .comentarios {
+  display: inline-block;
+  padding: 0rem 0.5rem;
+  line-height: 2rem;
+}
+
+main .cuerpo .pie .comentarios p span {
+  font-weight: bold;
+}
+
+main .sugerencias {
+  background-color: violet;
+  grid-area: area2;
+}
+
+footer {
+  width: 100%;
+  height: 2rem;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: white;
+}

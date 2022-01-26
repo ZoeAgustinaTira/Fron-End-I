@@ -1,0 +1,179 @@
+main{
+    background-image: url(../img/hormigas.gif);
+    
+    textarea{
+        resize: none;
+    }
+
+    .carousel{
+        justify-self: center;
+        
+        
+    }
+    .carousel-inner{
+        height: 500px;
+
+        .carousel-item,  .carousel-item .active{
+            height: 100%;
+
+            .carousel-caption{
+                display: flex;
+                align-items: center;
+
+                h5{
+                    font-size: 5rem;
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        gap:10px;
+        justify-content: center;
+        
+
+        .card{
+            h5{
+                padding-top: 1rem;
+                font-size: 2rem;
+                text-align: center;
+                color: $color-principal;
+            }
+            p{
+                span{
+                    font-size: 1.5rem;
+                    
+                }
+            }
+            
+            .gifs{
+                img{
+                    width: 5rem;
+                }
+            }
+            .gif-murcielago{
+                text-align: center;
+            }
+        }
+
+    }
+
+    .titular{
+        text-align: center;
+        h3{
+            color: $color-principal;
+            font-size: 5rem;
+        }
+    }
+    
+    .nos{
+        display: flex;
+        justify-content: center;
+
+        .nosotros{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: plum;
+            padding: 2rem;
+            p{
+                font-size: 1.5rem;
+                display: inline-block;
+                padding-top: 0.5rem;
+            }
+            .rojo{
+                text-align: center;
+                font-weight: 500;
+                font-style: oblique;
+                color: $color-principal;
+            }
+            
+            .lista{
+                text-align: start;
+                    li{
+                    font-size: 1.5rem;
+                    }
+
+            }
+
+            .garantizamos{
+                display: inline-block;
+                padding-top: 1rem;
+                text-align: center;
+                
+            }
+        }
+
+    }
+
+
+    .contacto{
+        padding-bottom: 3rem;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            display: flex;
+            justify-content: space-between;
+            
+
+            input{
+                background-color: $color-fondo-input;
+            }
+            .row, .coment{
+                width: 50%;
+                gap: 10px;
+            }
+
+            textarea{
+                height: 100%;
+                background-color: $color-fondo-input;
+            }
+            
+        }
+
+        .boton{
+            width: 20%;
+            display: inline-block;
+            
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(255,187,194);
+            font-size: 1.5rem;
+        }
+        .boton:hover{
+            background-color: $color-fondo-input-hover;
+        }
+        .row{
+            justify-content: flex-end;
+        }
+        
+    }
+
+    .cotizar{
+            text-align: center;
+            font-weight: 400;
+            
+            letter-spacing: 0.1rem;
+            color: red;
+            h4{
+                font-size: 3rem;
+            }
+            
+        
+    }
+    
+
+
+}
+
+
